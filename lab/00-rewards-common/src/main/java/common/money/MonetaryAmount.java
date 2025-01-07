@@ -24,7 +24,6 @@ public class MonetaryAmount implements Serializable {
 	 * Create a new monetary amount from the specified value.
 	 * @param value the value of the amount; for example, in $USD "10.00" would be ten dollars, ".29" would be 29 cents
 	 */
-	@JsonCreator
 	public MonetaryAmount(BigDecimal value) {
 		initValue(value);
 	}
@@ -119,7 +118,7 @@ public class MonetaryAmount implements Serializable {
 	 * @param percentage the percentage
 	 * @return the percentage amount
 	 */
-	public MonetaryAmount multiplyBy(Percentage percentage) {
+	public MonetaryAmount multiplyBy(common.money.Percentage percentage) {
 		return new MonetaryAmount(value.multiply(percentage.asBigDecimal()));
 	}
 

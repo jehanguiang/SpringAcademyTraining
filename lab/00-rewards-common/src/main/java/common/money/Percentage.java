@@ -27,7 +27,6 @@ public class Percentage implements Serializable {
 	 * @param the percentage value
 	 * @throws IllegalArgumentException if the value is not between 0 and 1
 	 */
-	@JsonCreator
 	public Percentage(BigDecimal value) {
 		initValue(value);
 	}

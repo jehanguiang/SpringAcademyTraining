@@ -32,7 +32,7 @@ public class MonetaryAmountTests {
 	@Test
 	public void testMultiplyByPercentage() {
 		MonetaryAmount amt = MonetaryAmount.valueOf("100.005");
-		assertEquals(MonetaryAmount.valueOf("8.00"), amt.multiplyBy(Percentage.valueOf("8%")));
+		assertEquals(MonetaryAmount.valueOf("8.00"), amt.multiplyBy(common.money.Percentage.valueOf("8%")));
 	}
 
 	@Test

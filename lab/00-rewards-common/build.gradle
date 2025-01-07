@@ -1,5 +1,11 @@
 apply plugin: 'java-library'
 
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+task prepareKotlinBuildScriptModel {
+
+}
 dependencies {
     api "org.hibernate:hibernate-entitymanager"
     api "com.fasterxml.jackson.core:jackson-annotations"

@@ -1,5 +1,6 @@
 package rewards;
 
+import java.math.BigDecimal;
 import java.util.Set;
 
 import common.money.MonetaryAmount;
@@ -92,7 +93,7 @@ public class AccountContribution {
 		 * @param totalSavings the beneficiary's total savings amount after the distribution was made
 		 */
 		public Distribution(String beneficiary, MonetaryAmount amount, Percentage percentage,
-				MonetaryAmount totalSavings) {
+                            MonetaryAmount totalSavings) {
 			this.beneficiary = beneficiary;
 			this.percentage = percentage;
 			this.amount = amount;

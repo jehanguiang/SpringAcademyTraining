@@ -13,7 +13,7 @@ public interface AccountRepository {
 	 * @param creditCardNumber the credit card number
 	 * @return the account object
 	 */
-	public Account findByCreditCard(String creditCardNumber);
+	public rewards.internal.account.Account findByCreditCard(String creditCardNumber);
 
 	/**
 	 * Updates the 'savings' of each account beneficiary. The new savings balance contains the amount distributed for a
